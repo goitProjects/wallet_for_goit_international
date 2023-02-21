@@ -1,31 +1,42 @@
+@import "../../stylesheet/mixin";
+
 .modal {
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
+  max-width: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 110px;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: var(--main-bg-cl);
+
+  @include mq(mobile){
+    max-width: none;
     width: 360px;
-    min-height: 110px;
-    border-radius: 20px;
-    padding: 20px;
-    background-color: var(--main-bg-cl);
+  }
 }
 
 .text {
-    display: block;
-    margin-bottom: 20px;
-    color: var(--accent-cl);
+  display: block;
+  margin-bottom: 20px;
+  color: var(--accent-cl);
 }
 
 .btnWrapper {
-    width: 100%;
-    display: flex;
+  width: 100%;
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  gap: 10px;
+
+  @include mq(mobile) {
+    flex-direction: row;
     justify-content: space-between;
+    gap: unset;
+  }
 }
 
 .button {
-    width: 150px;
+  width: 150px;
 }

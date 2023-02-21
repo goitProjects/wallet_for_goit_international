@@ -107,13 +107,14 @@
 
 .input {
   padding: 8px 20px;
-  width: 280px;
+  max-width: 280px;
   font-size: 18px;
   text-align: left;
   border: none;
   border-bottom: 1px solid var(--faded-secondary-cl);
 
   @include mq(tablet) {
+    max-width: none;
     width: 394px;
   }
 
