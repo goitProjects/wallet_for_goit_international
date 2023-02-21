@@ -1,0 +1,9 @@
+.spinner {
+    margin: 0 auto;
+    text-align: center;
+    position: absolute;
+    left: 50%;
+    top: 300px;
+    color: var(--loader-cl);
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,37 @@
+@import "stylesheet/mixin.scss";
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--faded-cl);
+    font-size: 18px;
+
+}
+
+.name {
+    text-transform: capitalize;
+}
+
+.button {
+    padding: 0;
+    border: 0;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    color: var(--faded-cl);
+    background-color: transparent;
+    cursor: pointer;
+    transition: color 250ms linear;
+
+    &:hover,
+    &:focus {
+        outline: none;
+        color: var(--reject-cl);
+    }
+
+    @include mq(tablet) {
+        padding-left: 8px;
+        border-left: 1px solid var(--faded-cl);
+    }
+}

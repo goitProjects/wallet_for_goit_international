@@ -1,0 +1,173 @@
+@import "stylesheet/_mixin.scss";
+
+.modal {
+  position: relative;
+  max-width: 320px;
+  padding: 20px;
+  border-radius: 20px;
+  background-color: var(--main-bg-cl);
+
+  @include mq(tablet) {
+    padding: 40px 70px 60px 70px;
+    max-width: unset;
+    width: 540px;
+  }
+}
+
+.close {
+  position: absolute;
+  width: 18px;
+  height: 18px;
+  top: 20px;
+  right: 20px;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-family: Poppins, system-ui, -apple-system, "Segoe UI", Roboto, Helvetica,
+    Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji";
+  font-size: 30px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.form {
+  margin-bottom: 20px;
+  display: grid;
+  gap: 40px;
+}
+
+.label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.income {
+  color: var(--accept-cl);
+}
+
+.expense {
+  color: var(--reject-cl);
+}
+
+.type {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  position: relative;
+}
+
+.check {
+  display: block;
+  width: 80px;
+  height: 40px;
+  border: 1px solid var(--accept-cl);
+  border-radius: 30px;
+  transition: border-color 250ms linear;
+
+  .type:checked+& {
+    border-color: var(--reject-cl);
+  }
+
+  &::after {
+    content: "+";
+    width: 44px;
+    height: 44px;
+    position: absolute;
+    top: -2px;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    color: var(--main-bg-cl);
+    background-color: var(--accept-cl);
+    border-radius: 50%;
+    transition: transform 250ms linear, background-color 250ms linear;
+  }
+
+  .type:checked+&::after {
+    content: "-";
+    padding-bottom: 4px;
+    transform: translate(40px);
+    background-color: var(--reject-cl);
+  }
+}
+
+.input {
+  padding: 8px 20px;
+  width: 280px;
+  font-size: 18px;
+  text-align: left;
+  border: none;
+  border-bottom: 1px solid var(--faded-secondary-cl);
+
+  @include mq(tablet) {
+    width: 394px;
+  }
+
+  &:focus {
+    outline: none;
+    border-color: var(--accept-cl);
+  }
+}
+
+.double {
+  display: grid;
+  gap: 40px;
+
+  @include mq(tablet) {
+    display: flex;
+    gap: 20px;
+  }
+}
+
+.half {
+  composes: input;
+
+  @include mq(tablet) {
+    width: 180px;
+  }
+}
+
+.dateIcon {
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 6px;
+  right: 8px;
+  color: var(--accent-cl);
+  pointer-events: none;
+}
+
+.error {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 10;
+  transform: translateY(110%);
+  color: var(--reject-cl);
+}
+
+.errorAmount {
+  composes: error;
+
+  @include mq(tablet) {
+    width: 250%;
+  }
+}
+
+.button {
+  margin: 0 auto;
+}

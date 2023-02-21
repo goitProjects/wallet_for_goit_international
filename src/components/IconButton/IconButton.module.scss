@@ -1,0 +1,19 @@
+.button {
+  padding: 0;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  color: var(--main-text-cl);
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background-color: transparent;
+  cursor: pointer;
+  transition: color 250ms linear, background-color 250ms linear,
+    border-color 250ms linear, transform 250ms linear;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    color: var(--accent-cl);
+  }
+}

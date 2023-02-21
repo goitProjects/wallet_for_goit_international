@@ -1,0 +1,216 @@
+@import "stylesheet/mixin.scss";
+
+.table {
+  display: inline-block;
+  table-layout: fixed;
+  border-collapse: collapse;
+  overflow: hidden;
+  border-radius: 30px;
+  min-height: 174px;
+  background-color: var(--household-cl);
+  background-image: url(../../assets/images/currency/vector-mb-1x.png);
+  background-image: -webkit-image-set(
+    url(../../assets/images/currency/vector-mb-1x.webp) 1x
+  );
+  background-image: image-set(
+    url(../../assets/images/currency/vector-mb-1x.webp) 1x
+  );
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: bottom;
+
+  @include mq(retina) {
+    background-image: url(../../assets/images/currency/vector-mb-2x.png);
+    background-image: -webkit-image-set(
+      url(../../assets/images/currency/vector-mb-2x.webp) 2x
+    );
+    background-image: image-set(
+      url(../../assets/images/currency/vector-mb-2x.webp) 2x
+    );
+  }
+
+  @include mq(tablet) {
+    min-height: 182px;
+    background-image: url(../../assets/images/currency/vector-tab-1x.png);
+    background-image: -webkit-image-set(
+      url(../../assets/images/currency/vector-tab-1x.webp) 1x
+    );
+    background-image: image-set(
+      url(../../assets/images/currency/vector-tab-1x.webp) 1x
+    );
+
+    @include mq(retina) {
+      background-image: url(../../assets/images/currency/vector-tab-2x.png);
+      background-image: -webkit-image-set(
+        url(../../assets/images/currency/vector-tab-2x.webp) 2x
+      );
+      background-image: image-set(
+        url(../../assets/images/currency/vector-tab-2x.webp) 2x
+      );
+    }
+  }
+
+  @include mq(desktop) {
+    min-height: 347px;
+    background-image: url(../../assets/images/currency/vector-desk-1x.png);
+    background-image: -webkit-image-set(
+      url(../../assets/images/currency/vector-desk-1x.webp) 1x
+    );
+    background-image: image-set(
+      url(../../assets/images/currency/vector-desk-1x.webp) 1x
+    );
+
+    @include mq(retina) {
+      background-image: url(../../assets/images/currency/vector-desk-2x.png);
+      background-image: -webkit-image-set(
+        url(../../assets/images/currency/vector-desk-2x.webp) 2x
+      );
+      background-image: image-set(
+        url(../../assets/images/currency/vector-desk-2x.webp) 2x
+      );
+    }
+  }
+}
+
+.thead {
+  background-color: var(--accent-faded-cl);
+}
+
+.th {
+  width: 93px;
+  
+  text-align: center;
+  
+  padding-top: 11px;
+  padding-bottom: 12px;
+  font-family: inherit;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--main-bg-cl);
+
+  @include mq(tablet) {
+    width: 112px;
+  }
+
+  @include mq(desktop) {
+    width: 131px;
+    padding-top: 17px;
+    padding-bottom: 16px;
+  }
+}
+
+.thLeft {
+  composes: th;
+  padding-left: 20px;
+  text-align: left;
+
+  @include mq(desktop) {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.thCenter {
+  composes: th;
+}
+
+.thRight {
+  composes: th;
+  padding-right: 17px;
+  text-align: right;
+
+  @include mq(desktop) {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+.tbody {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--main-bg-cl);
+}
+
+.trBody {
+  &:first-child .td {
+    @include mq(desktop) {
+      padding-top: 20px;
+    }
+  }
+}
+
+.td {
+  padding-top: 12px;
+
+  @include mq(tablet) {
+    padding-top: 16px;
+  }
+
+  @include mq(desktop) {
+    padding-top: 24px;
+  }
+}
+
+.tdLeft {
+  composes: td;
+  padding-left: 20px;
+  text-align: left;
+
+  @include mq(desktop) {
+    padding-left: 0;
+    text-align: center;
+  }
+}
+
+.tdCenter {
+  composes: td;
+  text-align: center;
+}
+
+.tdRight {
+  composes: td;
+  text-align: right;
+  padding-right: 17px;
+
+  @include mq(desktop) {
+    padding-right: 0;
+    text-align: center;
+  }
+}
+
+.wrapper {
+  display: flex;
+  max-width: 280px;
+  min-height: 174px;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(
+    var(--accent-faded-cl) 50px,
+    var(--household-cl) 50px
+  );
+  border-radius: 30px;
+
+  @include mq(tablet) {
+    max-width: 336px;
+    min-height: 182px;
+  }
+
+  @include mq(desktop) {
+    max-width: 393 px;
+    min-height: 347px;
+    background: linear-gradient(
+      var(--accent-faded-cl) 60px,
+      var(--household-cl) 60px
+    );
+  }
+}
+
+.text {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  color: var(--main-bg-cl);
+}

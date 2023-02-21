@@ -1,0 +1,127 @@
+@import "stylesheet/mixin.scss";
+
+.selectors {
+    width: 100%;
+    justify-content: space-between;
+
+    @include mq(tablet) {
+        display: flex;
+    }
+
+    @include mq(desktop) {
+        width: 400px;
+    }
+}
+
+.select_box {
+    width: 280px;
+    height: 50px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    margin: 0 auto;
+
+    &:not(:last-child) {
+        margin-bottom: 16px;
+    }
+
+    @include mq(tablet) {
+        width: 160px;
+
+        &:not(:last-child) {
+            margin-right: 16px;
+            margin-bottom: 0;
+        }
+    }
+
+    @include mq(desktop) {
+        width: 180px;
+    }
+}
+
+.option_container {
+    top: 55px;
+
+    position: absolute;
+    border: solid 1px var(--main-text-cl);
+    background-color: var(--main-bg-cl);
+    min-height: 0;
+    max-height: 0;
+    width: 100%;
+    opacity: 0;
+    transition: all 0.4s;
+    border-radius: 8px;
+    overflow: hidden;
+    order: 1;
+    z-index: 2;
+
+    &::-webkit-scrollbar {
+        width: 8px;
+        border: 1px solid var(--main-text-cl);
+        border-radius: 0 6px 6px 0;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: var(--scroll-cl);
+        border-radius: 8px;
+    }
+
+}
+
+.active {
+    composes: option_container;
+    max-height: 150px;
+    opacity: 1;
+    overflow-y: scroll;
+
+}
+
+
+.selected {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    // width: 180px;
+    width: 280px;
+    height: 50px;
+    cursor: pointer;
+    border: 1px solid var(--main-text-cl);
+    border-radius: 25px;
+    margin-bottom: 3px;
+    position: relative;
+    order: 0;
+
+    @include mq(tablet) {
+        width: 160px;
+    }
+
+    @include mq(desktop) {
+        width: 100%
+    }
+
+}
+
+.mainSelect {
+    margin-left: 20px;
+
+}
+
+.icon {
+    position: absolute;
+    top: 0;
+    right: 15px;
+    width: 20px;
+    height: 100%;
+    fill: var(--main-text-cl);
+    transition: all 0.4s;
+}
+
+.reset {
+    margin: 16px auto;
+    text-transform: none;
+
+    @include mq(tablet) {
+        width: 250px;
+    }
+}

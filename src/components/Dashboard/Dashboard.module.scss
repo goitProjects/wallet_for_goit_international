@@ -1,0 +1,63 @@
+@import "stylesheet/_mixin.scss";
+
+.container {
+  @include mq(tablet) {
+    display: grid;
+    gap: 20px;
+  }
+
+  @include mq(desktop) {
+    grid-template-columns: 464px 1fr;
+  }
+}
+
+.sidebar {
+  padding-top: 12px;
+  padding-bottom: 12px;
+
+  @include mq(tablet-only) {
+    display: flex;
+    gap: 32px;
+    justify-content: space-between;
+  }
+
+  @include mq(tablet) {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  @include mq(desktop) {
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      width: 1px;
+      height: 100%;
+      top: 0;
+      right: 0;
+      background-color: #e7e5f2;
+      box-shadow: -1px 0px 0px rgba(0, 0, 0, 0.05),
+        1px 0px 0px rgba(255, 255, 255, 0.6);
+    }
+  }
+}
+
+.wrapper {
+  @include mq(tablet) {
+    display: grid;
+    gap: 28px;
+  }
+
+  @include mq(desktop) {
+    margin-bottom: 28px;
+  }
+}
+
+.blur_container {
+  @include mq(tablet) {
+    backdrop-filter: blur(50px);
+    min-height: calc(100vh - 75px);
+    background: rgba(255, 255, 255, 0.4);
+  }
+}

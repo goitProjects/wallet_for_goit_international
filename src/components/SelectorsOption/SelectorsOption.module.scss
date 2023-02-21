@@ -1,0 +1,10 @@
+.item {
+  padding: 2px;
+  cursor: pointer;
+  transition: all 0.2s;
+  position: relative;
+
+  &:hover {
+    background-color: var(--select-cl);
+  }
+}

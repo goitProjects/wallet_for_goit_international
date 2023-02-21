@@ -1,0 +1,155 @@
+{
+  "logo": {
+    "wallet": "Wallet"
+  },
+  "switcher": {
+    "en": "Change language to English",
+    "ua": "Change language to Ukrainian"
+  },
+  "authForm": {
+    "password": "password",
+    "signUp": "Sign Up",
+    "login": "Login",
+    "register": "Register",
+    "email": "E-mail",
+    "confirmPassword": "Confirm password",
+    "enterYourName": "Enter your name",
+    "emailPassError": "Email or password is not correct",
+    "already": "User with such email already exists",
+    "loginReg": "Login"
+  },
+
+  "balance": { "balance": "Your balance" },
+  "currency": {
+    "currency": "Currency",
+    "buyingRate": "Buying rate",
+    "sellingRate": "Selling Rate",
+    "server": "Can't get data from server. Please try again later."
+  },
+  "diagram": {
+    "statistic": "Statistic",
+    "email": "E-mail"
+  },
+  "loginPage": {
+    "financeApp": "Finance App"
+  },
+
+  "modalAddTransaction": {
+    "addTransaction": "Add transaction",
+    "income": "Income",
+    "expense": "Expense",
+    "comment": "Comment",
+    "transaction": "Add transaction",
+    "cancel": "Cancel",
+    "selectDate": "Select a date",
+    "nocategories": "No categories found",
+    "success": "Transaction added",
+    "error": "Can't add transaction",
+    "closewindow": "Close window"
+  },
+
+  "modalEditTransaction": {
+    "editTransaction": "Edit transaction",
+    "income": "Income",
+    "expense": "Expense",
+    "comment": "Comment",
+    "transaction": "Change transaction",
+    "cancel": "Cancel",
+    "selectDate": "Select a date",
+    "success": "Transaction edited",
+    "error": "Can't edit transaction"
+  },
+
+  "modalConfirm": {
+    "cancel": "cancel",
+    "confirm": "confirm"
+  },
+
+  "modalLogout": {
+    "logout": "Are you sure you want to logout?",
+    "error": "Can't log out"
+  },
+
+  "table": {
+    "category": "Category",
+    "comment": "Comment",
+    "date": "Date",
+    "type": "Type",
+    "amount": "Amount",
+    "balance": "Balance",
+    "options": "Options",
+    "incomes": "Incomes:",
+    "expenses": "Expenses:",
+
+    "feelFree": "Feel free to add some transactions!"
+  },
+  "navigation": {
+    "homes": "Home",
+    "diagram": "Diagram"
+  },
+  "registrationPage": {
+    "regPage": "Finance App"
+  },
+  "removeTransaction": {
+    "remove": "Remove transaction",
+    "pleaseConfirm": "Please confirm deleting a transaction",
+    "success": "Transaction successfully deleted",
+    "error": "Can't delete"
+  },
+  "userName": {
+    "logout": "Logout"
+  },
+  "selectors": {
+    "month": "Month",
+    "year": "Year",
+    "reset": "Reset month/year"
+  },
+
+  "authFormSchemas": {
+    "valRegPassRequired": "Password is required",
+    "valRegPassMin": "Password must be at least 6 characters",
+    "valRegPassMax": "Password must not contain more than 12 characters",
+    "valRegPassMatches": "Password must contain six characters, at least one letter and one number",
+
+    "valRegUserNameRequired": "Name is required",
+    "valRegUserNameMin": "Name must be at least 1 characters",
+    "valRegUserNameMax": "Name must not contain more than 12 characters",
+    "valRegUserNameName": "Name is invalid",
+
+    "valRegEmailRequired": "Email is required",
+    "valRegEmailMin": "Email must be at least 10 characters",
+    "valRegEmailMax": "Email must not contain more than 63 characters",
+    "valRegEmailEmail": "Email is invalid",
+
+    "valRegConfirmPassRequired": "Confirm password is required",
+    "valRegConfirmPassOneof": "Password must match",
+
+    "valLoginEmailEmail": "Email is invalid",
+    "valLoginEmailRequired": "Email is required",
+
+    "valLoginPassMin": "Password must be at least 6 characters",
+    "valLoginPassMax": "Password must not contain more than 12 characters",
+    "valLoginPassMatches": "Password must contain six characters, at least one letter and one number",
+    "valLoginPassRequired": "Password is required"
+  },
+
+  "passwordStrength": {
+    "short": "too short",
+    "weak": "weak",
+    "okay": "okay",
+    "good": "good",
+    "strong": "strong"
+  },
+
+  "transactionSchema": {
+    "typeRequired": "Type is required",
+    "categoryIdRequired": "Category is required",
+
+    "amountMatches": "Only numbers allowed, max 2 symbols after dot",
+    "amountRequired": "Amount is required",
+
+    "transactionDateRequired": "Date is required",
+
+    "commentMatches": "Only alphabet symbols allowed"
+  }
+}

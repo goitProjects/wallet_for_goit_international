@@ -1,0 +1,121 @@
+@import "stylesheet/mixin.scss";
+
+.form {
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 568px;
+  width: 280px;
+
+  background-color: var(--main-bg-cl);
+
+  @include mq(tablet) {
+    width: 533px;
+    min-height: 468px;
+    border-radius: 20px;
+    padding-top: 40px;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  @media only screen and (max-height: 500px) and (orientation: landscape) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    min-height: auto;
+  }
+
+  @include mq(desktop) {
+    margin-left: 107px;
+  }
+}
+
+.titleWrapper {
+  justify-content: center;
+  margin-bottom: 60px;
+
+  @media only screen and (max-height: 500px) and (orientation: landscape) {
+    margin-bottom: 30px;
+  }
+}
+
+.inputWrapper {
+  position: relative;
+  margin-bottom: 40px;
+}
+
+.iconSvg {
+  position: absolute;
+  top: calc(100% / 2 - 76px);
+  left: calc(100% / 2 - 130px);
+
+  @include mq(tablet) {
+    top: calc(100% / 2 - 76px);
+    left: calc(100% / 2 - 195px);
+  }
+}
+
+.input {
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 280px;
+  border: transparent;
+  outline: transparent;
+  border-bottom: 1px solid var(--faded-secondary-cl);
+
+  font-family: Circe;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.5;
+  color: var(--accept-cl);
+
+  &::placeholder {
+    color: var(--faded-cl);
+  }
+
+  &::placeholder::first-letter {
+    text-transform: capitalize;
+  }
+
+  &:focus {
+    border-bottom: 1px solid var(--accept-cl);
+  }
+
+  &:focus+.iconSvg {
+    --color1: var(--accept-cl);
+  }
+
+  @include mq(tablet) {
+    width: 410px;
+  }
+}
+
+.inputError {
+  border-bottom: 1px solid var(--reject-cl);
+  --color1: var(--reject-cl);
+}
+
+.enterBtn {
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.loginBtn {
+  margin: 0 auto;
+  margin-bottom: 0;
+}
+
+.errorWrapper {
+  position: relative;
+}
+
+.error {
+  position: absolute;
+  top: calc(100% / 2 - 35px);
+  left: 0;
+  color: var(--reject-cl);
+
+  font-family: Circe;
+  font-size: 12px;
+}

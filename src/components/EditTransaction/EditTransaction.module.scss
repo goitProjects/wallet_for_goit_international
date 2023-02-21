@@ -1,0 +1,41 @@
+@import "stylesheet/_mixin.scss";
+
+.button {
+    margin-right: 15px;
+    color: var(--select-cl);
+
+    &:hover,
+    &:focus {
+        color: var(--main-text-cl);
+    }
+}
+
+.icon {
+    width: 15px;
+    height: 15px;
+}
+
+.edit {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: auto auto;
+    width: 35px;
+    height: 35px;
+    color: var(--edit-cl);
+
+    border: 3px solid var(--edit-cl);
+    border-radius: 50%;
+    background-color: var(--faded-cl);
+    top: 0;
+    left: 0;
+    transform: translate(-50%, -30%);
+}
+
+.iconMobile {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    margin: 0 auto;
+}

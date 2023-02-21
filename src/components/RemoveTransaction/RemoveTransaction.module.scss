@@ -1,0 +1,40 @@
+@import "stylesheet/mixin.scss";
+
+.button {
+  color: var(--select-cl);
+
+  &:hover,
+  &:focus {
+    color: var(--main-text-cl);
+  }
+}
+
+.icon {
+  width: 15px;
+  height: 15px;
+
+}
+
+.remove {
+  composes: button;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: auto auto;
+  width: 35px;
+  height: 35px;
+  border: 3px solid var(--remove-cl);
+  border-radius: 50%;
+  background-color: var(--faded-cl);
+  top: 0;
+  right: 0;
+  transform: translate(40%, -30%);
+}
+
+.removeIcon {
+  width: 30px;
+  height: 30px;
+  padding: 5px;
+  margin: 0 auto;
+}

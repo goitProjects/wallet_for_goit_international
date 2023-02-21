@@ -1,0 +1,157 @@
+{
+  "logo": {
+    "wallet": "Гаманець"
+  },
+  "switcher": {
+    "en": "Змінити мову на англійську",
+    "ua": "Змінити мову на українську"
+  },
+  "authForm": {
+    "password": "Пароль",
+    "email": "Електронна пошта",
+    "signUp": "Зареєструватися",
+    "emailPassError": "Електронна адреса або пароль неправильні",
+    "already": "Користувач із такою електронною адресою вже існує",
+    "login": "Увійти",
+    "confirmPassword": "Підтвердіть пароль",
+    "enterYourName": "Введіть ім'я",
+    "loginReg": "Увійти",
+    "register": "Реєстрація"
+  },
+  "balance": {
+    "balance": "Ваш баланс"
+  },
+  "currency": {
+    "currency": "Валюта",
+    "buyingRate": "Купівля",
+    "sellingRate": "Продаж",
+    "server": "Не вдається отримати дані із сервера. Будь-ласка спробуйте пізніше."
+  },
+  "diagram": {
+    "statistic": "Статистика",
+    "email": "Електронна пошта"
+  },
+
+  "loginPage": {
+    "financeApp": "Фінансовий додаток"
+  },
+
+  "modalAddTransaction": {
+    "addTransaction": "Додати транзакцію",
+    "income": "Дохід",
+    "expense": "Витрати",
+    "selectDate": "Виберіть дату",
+    "comment": "Коментар",
+    "transaction": "Додати транзакцію",
+    "cancel": "відміна",
+    "nocategories": "Категорії не знайдено",
+    "success": "Транзакцію додано",
+    "error": "Не можу додати транзакцію",
+    "closewindow": "Закрити вікно"
+  },
+
+  "modalEditTransaction": {
+    "editTransaction": "Редагувати транзакцію",
+    "income": "Дохід",
+    "expense": "Витрати",
+    "selectDate": "Виберіть дату",
+    "comment": "Коментар",
+    "transaction": "Змінити транзакцію",
+    "cancel": "відміна",
+    "success": "Транзакцію змінено",
+    "error": "Не можу змінити транзакцію"
+  },
+
+  "modalConfirm": {
+    "cancel": "відміна",
+    "confirm": "згоден"
+  },
+
+  "modalLogout": {
+    "logout": "Ви впевнені, що хочете вийти?",
+    "error": "Не можу вийти"
+  },
+
+  "table": {
+    "category": "Категорія",
+    "comment": "Коментар",
+    "date": "Дата",
+    "type": "Тип",
+    "amount": "Сума",
+    "balance": "Баланс",
+    "options": "Опції",
+    "incomes": "Доходи:",
+    "expenses": "Витрати:",
+    "feelFree": "Не соромтесь додати кілька транзакцій!"
+  },
+  "navigation": {
+    "homes": "Головна",
+    "diagram": "Діаграма"
+  },
+
+  "registrationPage": {
+    "regPage": "Фінансовий додаток"
+  },
+  "removeTransaction": {
+    "remove": "Видалити транзакцію",
+    "pleaseConfirm": "Підтвердьте видалення транзакції",
+    "success": "Транзакція успішно видалена",
+    "error": "Не можу видалити"
+  },
+  "userName": {
+    "logout": "Вийти"
+  },
+  "selectors": {
+    "month": "Місяць",
+    "year": "Рік",
+    "reset": "Скинути місяць/рік"
+  },
+
+  "authFormSchemas": {
+    "valRegPassRequired": "Потрібен пароль",
+    "valRegPassMin": "Пароль має містити не менше 6 символів",
+    "valRegPassMax": "Пароль не повинен містити більше 12 символів",
+    "valRegPassMatches": "Пароль має містити шість символів, принаймні одну букву та одну цифру",
+
+    "valRegUserNameRequired": "Укажіть ім’я",
+    "valRegUserNameMin": "Ім’я має містити принаймні 1 символ",
+    "valRegUserNameMax": "Ім'я не повинно містити більше 12 символів",
+    "valRegUserNameName": "Ім’я недійсне",
+
+    "valRegEmailRequired": "Електронна адреса обов’язкова",
+    "valRegEmailMin": "Електронна адреса має містити не менше 10 символів",
+    "valRegEmailMax": "Електронна адреса має містити не більше 63 символів",
+    "valRegEmailEmail": "Електронна адреса недійсна",
+
+    "valRegConfirmPassRequired": "Необхідно підтвердити пароль",
+    "valRegConfirmPassOneof": "Пароль повинен збігатися з",
+
+    "valLoginEmailEmail": "Електронна адреса недійсна",
+    "valLoginEmailRequired": "Електронна адреса обов’язкова",
+
+    "valLoginPassMin": "Пароль має містити не менше 6 символів",
+    "valLoginPassMax": "Пароль не повинен містити більше 12 символів",
+    "valLoginPassMatches": "Пароль має містити шість символів, принаймні одну букву та одну цифру",
+    "valLoginPassRequired": "Потрібен пароль"
+  },
+
+  "passwordStrength": {
+    "short": "надто короткий",
+    "weak": "слабкий",
+    "okay": "норма",
+    "good": "добрий",
+    "strong": "сильний"
+  },
+
+  "transactionSchema": {
+    "typeRequired": "Тип обов’язковий",
+    "categoryIdRequired": "Обов’язкова категорія",
+
+    "amountMatches": "Тільки числа дозволено, максимум 2 символи після крапки",
+    "amountRequired": "Необхідна сума",
+
+    "transactionDateRequired": "Дата обов’язкова",
+
+    "commentMatches": "Дозволені лише символи алфавіту"
+  }
+}
