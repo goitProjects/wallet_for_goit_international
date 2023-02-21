@@ -1,11 +1,11 @@
 import { useTranslation } from "react-i18next";
 import english from "assets/images/english.png";
 import ukraine from "assets/images/ukrainian.png";
-import "./backend";
+import "../../services/i18Init";
 import s from "./LanguageSwitcher.module.scss";
 import IconButton from "components/IconButton";
 
-export default function LanguageSwitchers() {
+export default function LanguageSwitcher() {
   const { t, i18n } = useTranslation();
   const changeLanguage = (lang) => {
     i18n.changeLanguage(lang);

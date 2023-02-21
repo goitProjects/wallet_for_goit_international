@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { isAuthSelector } from "redux/session";
 import { getIsButtonShown } from "redux/session";
 
-import LanguageSwitcher from "components/LanguageSwitcher";
+// import LanguageSwitcher from "components/LanguageSwitcher";
 import Container from "components/Container";
 import Navigation from "components/Navigation";
 import Balance from "components/Balance";
@@ -29,7 +29,7 @@ const Dashboard = () => {
     <Fragment>
       <Header />
       <section className={s.blur_container}>
-        <LanguageSwitcher />
+        {/* <LanguageSwitcher /> */}
         <Container className={s.container}>
           <div className={s.sidebar}>
             <div className={s.wrapper}>

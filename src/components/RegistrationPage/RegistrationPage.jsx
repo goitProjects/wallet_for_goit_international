@@ -1,7 +1,7 @@
 import { useTranslation } from "react-i18next";
 
 import AuthForm, { authType } from "components/AuthForm/AuthForm";
-import LanguageSwitcher from "components/LanguageSwitcher";
+// import LanguageSwitcher from "components/LanguageSwitcher";
 import s from "./RegistrationPage.module.scss";
 
 const RegistrationPage = () => {
@@ -9,7 +9,7 @@ const RegistrationPage = () => {
   const language = i18n.language;
   return (
     <section className={s.section}>
-      <LanguageSwitcher />
+      {/* <LanguageSwitcher /> */}
       <div className={s.container}>
         <div className={s.wrapper}>
           <div className={s.hero}>
