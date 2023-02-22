@@ -82,7 +82,7 @@
     border-bottom: 1px solid var(--accept-cl);
   }
 
-  &:focus+.iconSvg {
+  &:focus + .iconSvg {
     --color1: var(--accept-cl);
   }
 
@@ -100,6 +100,10 @@
   margin: 0 auto;
   margin-bottom: 20px;
   width: 280px;
+
+  @include mq(tablet) {
+    width: 300px;
+  }
 }
 
 .loginBtn {
