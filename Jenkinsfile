@@ -63,7 +63,7 @@ node("nodejs"){
                 sh "ssh ${env.sshUserAndHost} ${mkdirCmd}"
 
                 //sent files to https://wallet.goit.global
-                sh "scp -r ./dist/* ${env.sshUserAndHost}:/home/frontend/sites/www/${env.projectFolder}"
+                sh "scp -r ./build/* ${env.sshUserAndHost}:/home/frontend/sites/www/${env.projectFolder}"
 
                 //clear project build folder
                 sh "rm -rf .[!.]* *"
